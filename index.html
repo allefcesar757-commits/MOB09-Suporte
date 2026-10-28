@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI Inclusão - Suporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="mobile-container">
+    
+    <!-- Top Bar Acessibilidade -->
+    <header class="top-bar">
+      <div class="logo-area">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="logo-text">
+          <span>SENAI</span> <strong>Inclusão</strong>
+        </div>
+      </div>
+
+      <div class="acc-actions">
+        <button id="btn-accessibility" class="acc-badge" title="Tamanho da fonte">Aa</button>
+        <button class="profile-icon" title="Perfil">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="dot"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Header da Página -->
+    <section class="page-header">
+      <button class="btn-back" title="Voltar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <h1>Suporte</h1>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section class="support-content">
+      <h2 class="section-title">Precisa de ajuda presencial?</h2>
+
+      <!-- Campo de Descrição -->
+      <div class="input-description-wrapper">
+        <input type="text" id="desc-input" placeholder="Adicionar descrição (Opcional)">
+        <button class="btn-mic" id="btn-mic" title="Gravar por áudio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        </button>
+      </div>
+
+      <!-- Botão Pedir Ajuda -->
+      <button class="btn-request-help" id="btn-request">
+        <span class="btn-main-text">Pedir ajuda agora</span>
+        <span class="btn-sub-text">A inspetoria recebe seu pedido na hora.</span>
+      </button>
+
+      <!-- Confirmation Card (Ativável ao clicar em pedir ajuda) -->
+      <div class="confirmation-card" id="confirmation-card">
+        <h3 class="confirm-title">Pedido enviado.</h3>
+        <p class="confirm-message">A escola vai entrar em contato com você.</p>
+        
+        <div class="chips-container">
+          <span class="chip">Som</span>
+          <span class="chip">Vibração</span>
+          <span class="chip">Visual</span>
+        </div>
+      </div>
+
+      <!-- Recursos de Acessibilidade Extra -->
+      <div class="accessibility-buttons">
+        <button class="btn-listen" id="btn-listen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <span>Ouvir a tela</span>
+        </button>
+
+        <button class="btn-libras" id="btn-libras">
+          <span class="libras-icon">🤟</span>
+          <span>Ver em libras</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Barra de Navegação Inferior -->
+    <nav class="bottom-nav">
+      <button class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Início</span>
+      </button>
+
+      <button class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span>Reporte de obstáculo</span>
+      </button>
+
+      <button class="nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>Perfil</span>
+      </button>
+    </nav>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
